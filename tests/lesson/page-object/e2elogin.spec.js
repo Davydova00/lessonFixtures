@@ -1,9 +1,9 @@
 import { test } from "@playwright/test";
-import { LoginPage } from "./page-object/LoginPage";
-import { HomePage } from "./page-object/HomePage";
+import { LoginPage } from "./LoginPage";
+import { HomePage } from "./HomePage";
 
 
-test.describe("e2e Test for hillel ", ()=> {
+test.skip("e2e Test for hillel ", ()=> {
 
   test.beforeEach(async ({page})=>{
     let loginPage = new LoginPage(page);

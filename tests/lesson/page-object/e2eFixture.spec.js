@@ -1,5 +1,5 @@
-import { test } from './fixtures/fixture';
-import { Header } from './page-object/components/Header';
+import { test } from '../fixtures/fixture';
+import { Header } from './components/Header';
 
 test.describe.only("e2e Test for hillel ", ()=> {
 

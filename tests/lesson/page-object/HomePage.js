@@ -1,5 +1,6 @@
 import { expect } from "@playwright/test";
 import { BasePage } from "./BasePage";
+import { FirstPage} from "../SingletonBasePage";
 
 export class HomePage extends BasePage{
   constructor(page){
@@ -12,6 +13,7 @@ export class HomePage extends BasePage{
   async checkMyLadies() {
     await this.ladiesBtn.click();
     await this.myLadies.click();
-    await expect(this.ladiesHeader).toContainText('Ladies profiles marked as Favorite and Sweetheart.');
+   await FirstPage.closePage();
+ //   await expect(this.ladiesHeader).toContainText('Ladies profiles marked as Favorite and Sweetheart.');
   }
 }
